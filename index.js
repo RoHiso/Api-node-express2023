@@ -4,7 +4,7 @@ const {errorHandlerMiddleware} = require('./src/middleware/error-handler')
 const {initializeAuthentication} = require ('./src/auth/initialauth')
 
 const app = express()
-const port = 5001
+const port = 5001 || process.env.APP_PORT
 
 initializeAuthentication()
 
